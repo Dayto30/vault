@@ -1,0 +1,330 @@
+<html>
+
+<head>
+    <title>VAULT CDMX</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="slider.css">
+
+
+
+<script>
+function buscar() {
+    var input, filter, ul, li, h3, p, button, i, txtValue;
+  input = document.getElementById("search");
+  filter = input.value.toUpperCase();
+  ul = document.getElementsByTagName("ul");
+  for (i = 0; i < ul.length; i++) {
+    li = ul[i].getElementsByTagName("li");
+    for (j = 0; j < li.length; j++) {
+      h3 = li[j].getElementsByTagName("h3")[0];
+      p = li[j].getElementsByTagName("p")[0];
+      button = li[j].getElementsByTagName("button")[0];
+      if (h3 || p || button) {
+        txtValue = h3.textContent || h3.innerText;
+        txtValue += p.textContent || p.innerText;
+        txtValue += button.textContent || button.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+          li[j].style.display = "";
+        } else {
+          li[j].style.display = "none";
+        }
+            }
+        }
+    }
+
+    // Oculta el slider
+    var sliderContainer = document.querySelector(".slider-container");
+    if (filter !== "") {
+        sliderContainer.style.display = "none";
+    } else {
+        sliderContainer.style.display = "block";
+    }
+}
+</script>
+    
+    <script>
+        // Función para abrir el carrito
+        document.getElementById('cart-icon').addEventListener('click', function() {
+            document.getElementById('cart-popup').style.display = 'block';
+        });
+
+        // Función para cerrar el carrito
+        document.getElementById('close-cart').addEventListener('click', function() {
+            document.getElementById('cart-popup').style.display = 'none';
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+   
+        <div class="search-bar">
+            <input type="text" id="search" onkeyup="buscar()" placeholder="Buscar...">
+        </div>
+
+        <div class="logo">
+            <img src="d.png" alt="Logo Gallery CDMX" style="width: 300px; height: auto;">
+        </div>
+
+        <!-- Icono del carrito de compras -->
+        <div id="cart-icon">
+            <img src="ruta-de-tu-imagen.png" alt="Carrito de compras">
+        </div>
+    </header>
+
+    <main>
+        <section class="categories">
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#sneakers">SNEAKERS</a></li>
+                <li><a href="#coleccionables">COLECCIONABLES</a></li>
+                <li><a href="#bags">BAGS</a></li>
+                <li><a href="#sneaker-care">SNEAKER CARE</a></li>
+            </ul>
+        </section>
+
+    </main>
+
+        <section class="home">
+            <div class="slider slider-container">
+                <ul class="chocolate-gallery">
+                    <li><img src="b1.jpeg" alt=""></li>
+                    <li><img src="b2.jpeg" alt=""></li>
+                    <li><img src="b3.jpeg" alt=""></li>
+                    <li><img src="b5.jpeg" alt=""></li>
+                </ul>
+                </div>
+                </section>
+
+        <section class="product-list">
+            <h2 class="center-text">GRAILS</h2>
+            <ul>
+                <li>
+                    <img src="1.jpg" alt="Sneaker 1">
+                    <h3>Jordan 1 Retro Low OG SP SoleFly</h3>
+                    <p>$ 8,300.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="2.jpeg" alt="Sneaker 2">
+                    <h3>Jordan 1 Retro High Dior</h3>
+                    <p>$ 353,500.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="3.jpg" alt="Sneaker 3">
+                    <h3>Adidas Forum Buckle Low Bad Bunny Blue Tint</h3>
+                    <p>$ 18,100.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="4.jpeg" alt="Sneaker 4">
+                    <h3>Jordan 1 Retro Low OG SP Travis Scott Reverse Mocha</h3>
+                    <p>$ 49,700.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="5.jpg" alt="Sneaker 5">
+                    <h3>adidas Yeezy Slide Glow Green</h3>
+                    <p>$ 5,300.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="6.webp" alt="Sneaker 6">
+                    <h3>Jordan 1 Retro High OG Chicago Lost and Found</h3>
+                    <p>$ 17,800.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="7.webp" alt="Sneaker 6">
+                    <h3>Jordan 1 Retro High Off-White University Blue (Pre Owed)</h3>
+                    <p>$ 54,900.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="8.webp" alt="Sneaker 6">
+                    <h3>Jordan 1 Retro High OG SP Fragment x Travis Scott</h3>
+                    <p>$ 141,100.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+            </ul>
+        </section>
+
+        <section class="product-list">
+            <h2 class="center-text">Art Toys</h2>
+            <ul>
+                <li>
+                    <img src="a1.webp" alt="Sneaker 1">
+                    <h3>KAWS TIME OFF Vinyl Figure Black</h3>
+                    <p>$ 22,300.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="a2.webp" alt="Sneaker 2">
+                    <h3>KAWS Holiday UK Vinyl Figure Brown</h3>
+                    <p>$ 20,200.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="a3.webp" alt="Sneaker 3">
+                    <h3>Bearbrick Sesame Street Elmo Costume Ver. 2 1000%</h3>
+                    <p>$ 22,600.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="a4.webp" alt="Sneaker 4">
+                    <h3>BAPE x POPRACE Aston Martin GT3 Pink</h3>
+                    <p>$ 3,100.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="a5.jpeg" alt="Sneaker 5">
+                    <h3>BAPE x POPRACE Aston Martin GT3 Blue</h3>
+                    <p>$ 3,100.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="a6.jpg" alt="Sneaker 6">
+                    <h3>Bearbrick Michael Jordan 1985 Rookie Jersey 100% & 400% Set Gold Chrome</h3>
+                    <p>$ 20,600.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="a7.jpeg" alt="Sneaker 6">
+                    <h3>Bearbrick x Marvel Spider Man Scarlet Spider 100% & 400% Set</h3>
+                    <p>$ 7,600.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+                <li>
+                    <img src="a8.jpeg" alt="Sneaker 6">
+                    <h3>Baby Milo BEARBRICK Madera</h3>
+                    <p>$ 110,000.00 MXN</p>
+                    <button>Comprar</button>
+                </li>
+            </ul>
+
+            <section class="product-list">
+                <h2 class="center-text">Bags</h2>
+                <ul>
+                    <li>
+                        <img src="b1.jpeg" alt="Sneaker 1">
+                        <h3>Off-White Binder Diag Saff FannyPack Black White</h3>
+                        <p>$ 22,600.00 MXN</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li>
+                        <img src="b2.jpeg" alt="Sneaker 2">
+                        <h3>KKAWS x Uniqlo All Over Holiday Print Tote Bag Navy</h3>
+                        <p>$ 1,900.00 MXN</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li>
+                        <img src="b3.jpeg" alt="Sneaker 3">
+                        <h3>OFF-WHITE Binder Clip Bag SS22 Mini Diag Stripe White Black Yellow</h3>
+                        <p>$ 21,100.00 MXN</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li>
+                        <img src="b4.jpeg" alt="Sneaker 4">
+                        <h3>Off-White Diag Camera Bag Industrial Black White</h3>
+                        <p>$ 17,300.00 MXN</p>
+                        <button>Comprar</button>
+                    </li>
+                    <li>
+                        <img src="b5.jpeg" alt="Sneaker 5">
+                        <h3>Coach x Bape Accordion Zip Wallet</h3>
+                        <p>$ 15,100.00 MXN</p>
+                        <button>Comprar</button>
+                    </li>
+                   
+                </ul>
+
+            </section>
+
+
+    </main>
+    <div id="searchResults"></div>
+
+
+<!-- Icono personalizado del carrito de compras -->
+<div id="cart-icon">
+    <i class="fas fa-shopping-cart"></i>
+</div>
+
+<!-- Ventana emergente del carrito (inicialmente oculta) -->
+<div id="cart-popup">
+    <h3>Carrito de compras</h3>
+    <ul id="cart-items">
+        <!-- Aquí se mostrarán los elementos del carrito -->
+    </ul>
+    <button id="close-cart">Cerrar</button>
+</div>
+
+<script>
+    // Función para abrir el carrito
+    document.getElementById('cart-icon').addEventListener('click', function() {
+        document.getElementById('cart-popup').style.display = 'block';
+    });
+
+    // Función para cerrar el carrito
+    document.getElementById('close-cart').addEventListener('click', function() {
+        document.getElementById('cart-popup').style.display = 'none';
+    });
+
+    // Array para almacenar los productos en el carrito
+    const carrito = [];
+
+    // Función para añadir un producto al carrito
+    function agregarAlCarrito(producto) {
+        carrito.push(producto);
+        mostrarCarrito();
+    }
+
+    // Función para eliminar un producto del carrito
+    function eliminarDelCarrito(index) {
+        carrito.splice(index, 1);
+        mostrarCarrito();
+    }
+
+    // Función para mostrar los productos en el carrito
+    function mostrarCarrito() {
+        const listaCarrito = document.getElementById('cart-items');
+
+        // Limpia el contenido previo
+        while (listaCarrito.firstChild) {
+            listaCarrito.removeChild(listaCarrito.firstChild);
+        }
+
+        // Agrega los productos al carrito
+        carrito.forEach((producto, index) => {
+            const li = document.createElement('li');
+            const eliminarButton = document.createElement('img');
+            eliminarButton.src = 'data:image/jpeg;base64,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'; // Reemplaza 'tu-imagen-eliminar.png' con la URL de tu imagen de eliminación
+            eliminarButton.alt = 'Eliminar';
+            eliminarButton.style.width = '20px'; // Ajusta el tamaño de la imagen según tus necesidades
+            eliminarButton.style.cursor = 'pointer';
+            eliminarButton.addEventListener('click', () => eliminarDelCarrito(index));
+            li.textContent = producto;
+            li.appendChild(eliminarButton);
+            listaCarrito.appendChild(li);
+        });
+    }
+
+    // Agrega un evento clic a los botones "Comprar"
+    const botonesComprar = document.querySelectorAll('.product-list button');
+    botonesComprar.forEach((boton, index) => {
+        boton.addEventListener('click', () => {
+            const nombreProducto = document.querySelectorAll('.product-list h3')[index].textContent;
+            agregarAlCarrito(nombreProducto);
+        });
+    });
+</script>
+
+</body>
+
+
+
+</html>

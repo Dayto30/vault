@@ -1,0 +1,214 @@
+
+    /* Estilo general */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Estilo del encabezado */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #424242;
+        color: #fff;
+        padding: 20px;
+    }
+
+    header .logo {
+        margin: 20px;
+    }
+
+    header .logo p {
+        font-size: 18px;
+    }
+
+    .center-text {
+        text-align: center;
+    }
+
+    header h2 {
+        top: 10;
+    }
+
+
+    .search-bar input {
+        padding: 5px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+    }
+
+    /* Centro del logo */
+    .logo {
+        text-align: center;
+    }
+
+    /* Estilo para la barra de búsqueda */
+    .search-bar {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .search-bar input {
+        padding: 5px;
+        font-size: 12px;
+        border: 1px solid #ccc;
+    }
+
+    .search-bar button {
+        padding: 5px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Estilo para las secciones como hipervínculos sin cambio de color ni subrayado */
+    .categories ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff;
+        padding: 10px 0;
+    }
+
+    .categories ul li a {
+        margin: 0 20px;
+        font-size: 14px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none; /* Elimina el subrayado */
+        color: inherit; /* Hereda el color del texto */
+    }
+
+    .categories ul li a:hover {
+        background-color: #f0f0f0; /* Mantiene el mismo color de fondo al pasar el ratón */
+    }
+
+    .categories ul li {
+        margin: 0 10px; /* Espacio entre las secciones */
+        font-size: 12px;
+    }
+
+    /* Estilo de la lista de productos */
+    .product-list h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+
+    .product-list ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .product-list ul li {
+        width: calc(25% - 20px);
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+
+    .product-list ul li img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+    .product-list h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    /* Estilo de los botones */
+    button {
+        background-color: #424242;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #424242;
+    }
+
+    /* Estilo del pie de página */
+    footer {
+        background-color: #424242;
+        color: #fff;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    /* Establece una altura máxima para los elementos li */
+    .product-list ul li {
+        max-height: 330px; /* Ajusta la altura máxima según tus necesidades */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    /* Estilo de las imágenes de productos */
+    .product-list ul li img {
+        width: 60%; /* Establece el ancho al 100% para mantener las imágenes proporcionales */
+        max-height: 250px; /* Ajusta la altura máxima de las imágenes */
+        border: 1px solid #ddd;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    }
+
+
+    /* Estilo para el título y precio */
+    .product-list ul li h3, .product-list ul li p {
+        text-align: center;
+        margin: 10px 0;
+        font-size: 12px; /* Ajusta el tamaño de fuente según tus necesidades */
+    }
+
+    #cart-icon {
+        margin-left: 20px; /* Ajusta el margen según sea necesario */
+    }
+    
+
+
+    #cart-popup {
+        display: none;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+      
+      #cart-popup h3 {
+        text-align: center;
+      }
+      
+      #cart-items {
+        list-style: none;
+        padding: 0;
+      }
+      
+      #cart-items li {
+        margin: 10px 0;
+      }
+      
+      #close-cart {
+        display: block;
+        margin: 10px auto;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Jordan 1 Retro High Obsidian - Gallery CDMX</title>
+  <link rel="stylesheet" href="style.css">
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        var params = new URLSearchParams(window.location.search);
+        var searchTerm = params.get("searchTerm");
+        if (searchTerm) {
+            // Realizar la búsqueda con el término de búsqueda proporcionado
+            document.getElementById("search").value = searchTerm;
+            buscar(); // Llama a tu función de búsqueda
+        }
+    });
+</script>
+</head>
+<body>
+    <header>
+   
+        <div class="search-bar">
+            <input type="text" id="search" onkeyup="buscar()" placeholder="Buscar...">
+        </div>
+
+        <div class="logo">
+            <img src="d.png" alt="Logo Gallery CDMX" style="width: 300px; height: auto;">
+        </div>
+
+        <!-- Icono del carrito de compras -->
+        <div id="cart-icon">
+            <img src="ruta-de-tu-imagen.png" alt="Carrito de compras">
+        </div>
+    </header>
+
+    <main>
+        <section class="categories">
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li><a href="#sneakers">SNEAKERS</a></li>
+                <li><a href="#coleccionables">COLECCIONABLES</a></li>
+                <li><a href="#bags">BAGS</a></li>
+                <li><a href="#sneaker-care">SNEAKER CARE</a></li>
+            </ul>
+        </section>
+  <main>
+    <section class="product">
+      <img src="a1.webp" alt="">
+      <h2></h2>
+      <p>
+
+      </p>
+      <p>
+        Precio: $
+      </p>
+      <p>
+        Tallas disponibles: 26 a 31
+      </p>
+      <a href="#">Agregar al carrito</a>
+    </section>
+    <section class="related-products">
+      <h2>Productos relacionados</h2>
+      <ul>
+        <li>
+          <a href="#">Fear of God Essentials Crewneck Jet Black</a>
+          <p>Precio: $5,500 MXN</p>
+        </li>
+        <li>
+          <a href="#">Nike Dunk Low SP Champ Colors University Orange Marine (2020)</a>
+          <p>Precio: $3,800 MXN</p>
+        </li>
+        <li>
+          <a href="#">Jordan 1 Mid Light Smoke Grey</a>
+          <p>Precio: $7,999 MXN</p>
+        </li>
+        <li>
+          <a href="#">Supreme Fighter Tee Red</a>
+          <p>Precio: $3,400 MXN</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <p>
+      Gallery CDMX © 2023
+    </p>
+  </footer>
+</body>
+</html>
